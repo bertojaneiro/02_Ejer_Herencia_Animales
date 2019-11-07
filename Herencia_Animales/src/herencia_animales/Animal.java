@@ -9,7 +9,7 @@ package herencia_animales;
  *
  * @author Equipo 1
  */
-public class Animal {
+public abstract class Animal {
     private String nombre;
     private int edad;
     private int peso;
