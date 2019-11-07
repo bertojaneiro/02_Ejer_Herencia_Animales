@@ -9,6 +9,6 @@ package herencia_animales;
  *
  * @author pc
  */
-public class Percebe {
+public class Percebe extends Animal {
     
 }
