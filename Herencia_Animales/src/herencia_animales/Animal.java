@@ -12,7 +12,24 @@ package herencia_animales;
 public abstract class Animal {
     private String nombre;
     private int edad;
-    private int peso;
+    private float peso;
+    Habitat habitat;
+
+    public Animal() { peso = 10f; }
+    
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        peso = 10f;
+    }
+
+    public Habitat getHabitat() {
+        return habitat;
+    }
+    
+    public void alimentar(String alimento) {
+        System.out.println(nombre + "  mastica y come " + alimento);
+    }
 
     public String getNombre() {
         return nombre;
@@ -30,7 +47,7 @@ public abstract class Animal {
         this.edad = edad;
     }
 
-    public int getPeso() {
+    public float getPeso() {
         return peso;
     }
 
@@ -45,11 +62,7 @@ public abstract class Animal {
         return "Animal: nombre: " + nombre + ", edad: " + edad + ", peso: " + peso;
     }
     
-    
- 
-    
-    
-    
-    
-    
+    public static void mostrar(Animal animal) {
+        System.out.println(animal.toString());
+    }
 }
