@@ -13,6 +13,15 @@ public class Perro extends Animal{
 
     private String raza;
 
+    public Perro() {
+    }
+
+    public Perro(String nombre, int edad) {
+        super(nombre, edad);
+    }
+    
+    
+
     public String getRaza() {
         return raza;
     }
