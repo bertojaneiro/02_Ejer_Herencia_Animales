@@ -9,6 +9,32 @@ package herencia_animales;
  *
  * @author pc
  */
-public class Perro {
+public class Perro extends Animal{
+
+    private String raza;
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+    
+    
+    
+    @Override
+    public void desplazar() {
+        System.out.println(getNombre()+" corre contento.");
+    }
+    
+    public void ladrar(){
+        System.out.println(getNombre()+" dice 'guau guau guau!'");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+" es un perro de la raza "+getRaza(); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
