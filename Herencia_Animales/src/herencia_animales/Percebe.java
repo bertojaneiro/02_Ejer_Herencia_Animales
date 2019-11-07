@@ -11,6 +11,13 @@ package herencia_animales;
  */
 public class Percebe extends Animal {
 
+    public Percebe() {
+    }
+
+    public Percebe(String nombre, int edad) {
+        super(nombre, edad);
+    }
+    
     @Override
     public void alimentar(String alimento) {
         System.out.println(getNombre() + " se nutre de alimento " + alimento);
