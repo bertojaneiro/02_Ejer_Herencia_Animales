@@ -10,5 +10,21 @@ package herencia_animales;
  * @author pc
  */
 public class Percebe extends Animal {
+
+    @Override
+    public void alimentar(String alimento) {
+        System.out.println(getNombre() + " se nutre de alimento " + alimento);
+    }
+    
+    @Override
+    public void desplazar() {
+        System.out.println("Los percebes se adhieren a una roca.");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " es un percebe";
+    }
+    
     
 }
