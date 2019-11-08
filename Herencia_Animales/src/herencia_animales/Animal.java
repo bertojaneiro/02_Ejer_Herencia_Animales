@@ -28,7 +28,7 @@ public abstract class Animal {
     }
     
     public void alimentar(String alimento) {
-        System.out.println(nombre + "  mastica y come " + alimento);
+        System.out.println(nombre + " mastica y come " + alimento);
     }
 
     public String getNombre() {

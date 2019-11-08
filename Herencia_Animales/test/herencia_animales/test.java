@@ -39,10 +39,10 @@ public class test {
         perro.desplazar();
 
         Animal.mostrar(perro);
-        
+
         assertEquals(perro.toString(), "Animal: nombre: Pluto, edad: 2, peso: 10.0 es un perro de la raza Pastor alemán");
     }
-    
+
     @Test
     public void testHerenciaAnimalesPercebe() {
         Percebe percebe = new Percebe();
@@ -63,7 +63,7 @@ public class test {
         percebe.desplazar();
 
         Animal.mostrar(percebe);
-        
+
         assertEquals(percebe.toString(), "Animal: nombre: Toby, edad: 1, peso: 0.1 es un percebe");
     }
 
@@ -73,19 +73,25 @@ public class test {
         Perro pancho = new Perro("Pancho", 3);
         Percebe toby = new Percebe("Toby", 1);
         Percebe juan = new Percebe("Juan", 0);
-        
+
         Animal[] animales = {pluto, pancho, toby, juan};
-        
+
         System.out.println("---------");
-        
+
         for (Animal animal : animales) {
-            
-            animal.alimentar("alimento");
+
+            if (animal instanceof Perro) {
+                animal.alimentar("pienso");
+            } else if (animal instanceof Percebe) {
+                animal.alimentar("fitoplacton");
+            } else {
+                animal.alimentar("alimento");
+            }
 
             animal.desplazar();
 
             Animal.mostrar(animal);
-            
+
             System.out.println();
         }
         System.out.println("---------");
