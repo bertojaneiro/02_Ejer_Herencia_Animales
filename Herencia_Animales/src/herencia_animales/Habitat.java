@@ -11,5 +11,5 @@ package herencia_animales;
  */
 public enum Habitat {
     NO_DEFINIDO, ACUATICO, TERRESTRE, ANFIBIO
-    //comentario
+    // conflicto
 }
