@@ -38,9 +38,9 @@ public class test {
 
         perro.desplazar();
 
-        System.out.println(perro);
-
         Animal.mostrar(perro);
+        
+        assertEquals(perro.toString(), "Animal: nombre: Pluto, edad: 2, peso: 10.0 es un perro de la raza Pastor alemán");
     }
     
     @Test
@@ -62,9 +62,9 @@ public class test {
 
         percebe.desplazar();
 
-        System.out.println(percebe);
-
         Animal.mostrar(percebe);
+        
+        assertEquals(percebe.toString(), "Animal: nombre: Toby, edad: 1, peso: 0.1 es un percebe");
     }
 
     @Test
@@ -83,8 +83,6 @@ public class test {
             animal.alimentar("alimento");
 
             animal.desplazar();
-
-            System.out.println(animal);
 
             Animal.mostrar(animal);
             

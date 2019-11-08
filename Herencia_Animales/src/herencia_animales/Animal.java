@@ -62,7 +62,8 @@ public abstract class Animal {
         return "Animal: nombre: " + nombre + ", edad: " + edad + ", peso: " + peso;
     }
     
-    public static void mostrar(Animal animal) {
+    public static String mostrar(Animal animal) {
         System.out.println(animal.toString());
+        return animal.toString();
     }
 }
