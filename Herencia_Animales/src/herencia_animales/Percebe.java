@@ -12,6 +12,7 @@ package herencia_animales;
 public class Percebe extends Animal {
 
     public Percebe() {
+        habitat = Habitat.ACUATICO;
     }
 
     public Percebe(String nombre, int edad) {

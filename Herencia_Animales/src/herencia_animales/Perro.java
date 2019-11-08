@@ -14,6 +14,7 @@ public class Perro extends Animal{
     private String raza;
 
     public Perro() {
+        habitat = Habitat.TERRESTRE;
     }
 
     public Perro(String nombre, int edad) {
