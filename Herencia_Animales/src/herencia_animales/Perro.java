@@ -6,7 +6,8 @@
 package herencia_animales;
 
 /**
- *
+ * clase hija de animal preparada para perro 
+ * con los metodos ladrar, desplazarse y toString los dos ultimos sobreescritos 
  * @author pc
  */
 public class Perro extends Animal{
@@ -33,7 +34,10 @@ public class Perro extends Animal{
     }
     
     
-    
+    /**
+     * hacemos un override del metodo abstracto de la 
+     * clase padre para que muestre la informacion especifica del hijo
+     */
     @Override
     public void desplazar() {
         System.out.println(getNombre()+" corre contento.");
