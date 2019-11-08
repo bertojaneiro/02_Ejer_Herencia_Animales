@@ -13,7 +13,7 @@ public abstract class Animal {
     private String nombre;
     private int edad;
     private float peso;
-    Habitat habitat;
+    protected Habitat habitat;
 
     public Animal() { peso = 10f; }
     
